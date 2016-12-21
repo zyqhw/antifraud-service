@@ -10,15 +10,18 @@ spring:
     username: root  
     password: root  
     driver-class-name: com.mysql.jdbc.Driver
-      
+    
 mybatis:   
   typeAliasesPackage: cn.unisk.antifraud.domain
 
 # LOGGING  
 logging:
     path: 
-    file: ${catalina.home}/logs/antifraud-service.log
+#    file: ${catalina.home}/logs/antifraud-service.log
     level:
       root: info
       cn.unisk.antifraud.mapper: debug 
       com.ibatis: info 
+
+application:
+  message: Hello, Andy 
